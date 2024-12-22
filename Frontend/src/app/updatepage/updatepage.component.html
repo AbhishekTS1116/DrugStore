@@ -1,0 +1,34 @@
+<h2>Update Drug Information</h2>
+<div class="container">
+  <form (ngSubmit)="updatedrug()">
+    <div *ngIf="drugupdate">
+      <br>
+      <label for="drugname">Drug Name:</label><br>
+      <input name="drugname" placeholder="Drug Name" type="text" [(ngModel)]="drugupdate.drug_name" required readonly><br><br>
+  
+      <label for="activeingredients">Active Ingredients:</label><br>
+      <input type="text" placeholder="Active Ingredients" name="activeingredients" [(ngModel)]="drugupdate.active_ingredients" required><br><br>
+  
+      <label for="strength">Strength:</label><br>
+      <input type="text" placeholder="Strength" name="strength" required [(ngModel)]="drugupdate.strength" ><br><br>
+  
+      <label for="dosageformroute">Dosage Form/Route:</label><br>
+      <input type="text" placeholder="Dosage Form/Route" name="dosageformroute" required [(ngModel)]="drugupdate.dosage_form_routes" ><br><br>
+  
+      <label for="marketingstatus">Marketing Status:</label><br>
+      <input type="text" placeholder="Marketing Status" name="marketingstatus" required [(ngModel)]="drugupdate.marketing_status" ><br><br>
+      
+      <label for="tecode">TE Code:</label><br>
+      <input type="text" placeholder="TE Code" name="tecode" required [(ngModel)]="drugupdate.te_code" ><br><br>
+      
+      <label for="rld">RLD:</label><br>
+      <input type="text" placeholder="RLD" name="rld" required [(ngModel)]="drugupdate.rld" ><br><br>
+      
+      <label for="rs">RS:</label><br>
+      <input type="text" placeholder="RS" name="rs" required [(ngModel)]="drugupdate.rs" ><br><br>
+  
+      <button type="submit" >Update</button>
+      <button type="reset">Cancel</button>
+    </div>
+  </form>
+</div>

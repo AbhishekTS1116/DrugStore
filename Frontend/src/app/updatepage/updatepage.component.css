@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h2{
+    text-align: center;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid rgb(42, 41, 41);
+    border-radius: 4px;
+    font-size: 16px;
+
+    
+}
+
+label{
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(67, 63, 63);
+    color: white;
+    border: none;
+    border-radius: 13px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: rgb(42, 41, 41);
+}

@@ -1,0 +1,58 @@
+
+
+
+<div>
+    <h2>View or Update DrugInfo</h2>
+    <div>
+        <div>
+            <div>
+                <h4>DrugInformation</h4>
+            </div>
+
+            <div>
+                <input type="text"[(ngModel)]="searchdrug" placeholder="Search a Drug">
+            </div>
+            <br>
+
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th hidden>ID</th>
+                            <th>Drug Name</th>
+                            <th>Active Ingredients</th>
+                            <th>Strength</th>
+                            <th>Dosage Form/Route</th>
+                            <th>Marketing Status</th>
+                            <th>TE Code</th>
+                            <th>RLD</th>
+                            <th>RS</th>
+                            <th>Edit/Delete</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of this.druglist| search:searchdrug">
+                            <td hidden>{{item._id}}</td>
+                            <td>{{item.drug_name}}</td>
+                            <td>{{item.active_ingredients}}</td>
+                            <td>{{item.strength}}</td>
+                            <td>{{item.dosage_form_routes}}</td>
+                            <td>{{item.marketing_status}}</td>
+                            <td>{{item.te_code}}</td>
+                            <td>{{item.rld}}</td>
+                            <td>{{item.rs}}</td>
+
+                            <td>
+                                <a routerLink="/viewdrug/{{item._id}}/update" >Edit</a>
+                                <button type="button" (click)="deleteDrug($event,item._id)">Delete</button>
+                            </td>
+
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-section{
+    flex: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 3px solid rgb(122, 118, 118);
+    border-radius: 8px;
+}
+
+.right-section{
+    flex: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 3px solid rgb(122, 118, 118);
+    border-radius: 8px;
+}
+
+h2{
+    text-align: center;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid rgb(42, 41, 41);
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 175px;
+    
+}
+
+label{
+    margin-left: 175px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(67, 63, 63);
+    color: white;
+    border: none;
+    border-radius: 13px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 175px ;
+    margin-right: -10px;
+}
+
+button:hover {
+    background-color: rgb(42, 41, 41);
+}
